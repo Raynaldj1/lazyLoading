@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <style>
+
+    *{
+        background-color: rgba(255, 255, 255, 0.151);
+        
+        
+        
+    }
+   
+    #totalpage {
+        padding: 0;
+        margin-bottom: 5rem;
+       
+        margin: auto;
+        visibility: hidden;
+    
+        
+    }
+
+    #page1{ 
+        background-color: rgb(252, 253, 157);
+        
+        border: 0;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        padding-left: auto;
+        padding-right: auto;
+        border-radius: 50%;
+       
+        
+        
+       
+       
+        
+        
+    }
+    #page2{ 
+      
+        background-color: rgb(252, 253, 157);
+        
+        border: 0;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        padding-left: auto;
+        padding-right: auto;
+        border-radius:100%;
+        
+        
+        
+        
+    }
+    #page3{ 
+        background-color: rgb(252, 253, 157);
+        
+        border: 0;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        padding-left: auto;
+        padding-right: auto;
+        border-radius: 100%;
+        
+        
+    }
+    #page4{ 
+        background-color: rgb(252, 253, 157);
+        
+        border: 0;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        padding-left: auto;
+        padding-right: auto;
+        border-radius: 100%;
+        
+       
+        
+        
+    }
+
+    div {
+    
+        width: 75%;
+        margin: auto;
+        margin-top: 200px;
+        padding: 0;
+        
+        text-align: center;
+        justify-self: auto;
+      
+      
+        
+      
+      
+    }
+
+p {
+    color:rgb(105, 40, 40);
+    font-size: 1;
+    text-align: center;
+    width:100%;
+    font-family: Arial, Helvetica, sans-serif ;
+    -webkit-text-stroke-width: .3px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.308);
+   
+    
+  
+    
+
+   
+    
+    
+    
+}
+#shapebox{
+    padding: 0;
+    
+    display: block;
+    
+    
+
+
+}
+#shape {
+    
+    
+    border-radius: 100%;
+    height: 10px;
+    width: 10px;
+    background-color: rgb(156, 77, 77);
+    margin: 100px;
+    animation: mymove;
+    animation-duration: 30s;
+    top: 100px ;
+    left: 20px;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-iteration-count: infinite;
+    
+    position: fixed;
+}
+    #shape1 {
+    
+    
+    border-radius: 100%;
+    height: 10px;
+    width: 10px;
+    background-color: rgb(77, 156, 97);
+    margin: 100px;
+    position: fixed;
+    animation: mymove1;
+    animation-duration: 30s;
+    top: 100px ;
+    left: 20px;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-iteration-count: infinite;
+    
+    }
+    #shape3 {
+    
+    
+    border-radius: 100%;
+    height: 15px;
+    width: 15px;
+    background-color: rgb(98, 77, 156);
+    margin: 100px;
+    position: fixed;
+    animation: mymove2;
+    animation-duration: 30s;
+    top: 250px ;
+    left: 145px;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-iteration-count: infinite;
+    
+    position: fixed;
+    }
+    #shape2 {
+    
+    
+    border-radius: 100%;
+    height: 12px;
+    width: 12px;
+    background-color: rgb(156, 142, 77);
+    margin: 100px;
+    position: fixed;
+    animation: mymove3;
+    animation-duration: 40s;
+    top: 265px ;
+    left: 530px;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-iteration-count: infinite;
+    }
+
+
+
+
+@keyframes mymove {
+    
+  10% {left: 20px; top: 100px;}
+  20% {left: 600px; top: 500px;}
+  40% {left:600px; top: 300px}
+  60% {left:20px; top: 100px}
+  80% {top: 400px; top: 500px; }
+  100% {left: 20px; top: 100px}
+}
+@keyframes mymove1 {
+    
+    10% {left: 100px; top: 20px}
+    20% {left: 500px; top: 600px;}
+    40% {left:300px; top: 600px}
+    60% {left:100px; top: 20px}
+    80% {top: 500px; top: 400px; }
+    100% {left: 100px; top: 20px}
+  }
+  @keyframes mymove2 {
+    
+    10% {left: 200px; top: 100px}
+    20% {left: 600px; top: 500px;}
+    40% {left:600px; top: 300px}
+    60% {left:200px; top: 100px}
+    80% {top: 40px; top: 500px; }
+    100% {left: 200px; top: 100px}
+  }
+  @keyframes mymove3 {
+      
+      10% {left: 100px; top: 20px}
+      20% {left: 200px; top: 600px;}
+      40% {left:30px; top: 60px}
+      60% {left:100px; top: 200px}
+      80% {top: 50px; top: 40px; }
+      100% {left: 10px; top: 20px}
+    }
+
+   
+
+#shape:hover{
+    
+    opacity: .1;
+}
+
+#footer {
+    height: 100px;
+    width: 100%;
+    color: rgb(63, 24, 24);
+    visibility: visible;
+   
+}
+
+#btn{
+    position: fixed;
+    
+}
+
+.test {
+    visibility: visible;
+}
+
+.test1 {
+    visibility: hidden;
+}
+h1 {
+    color: rgb(131, 32, 32);
+}
+
+#nav {
+  
+  visibility: visible;
+  height: 10px;
+  width: 100%;
+  position: fixed;
+  margin: 0;
+  top: 100px;
+  left: -800px;
+  border-radius: 25%;
+  justify-content: left;
+  
+ 
+  
+  
+
+  
+}
+
+a {
+color: rgb(155, 11, 11);
+font-size: 20px;
+
+border-radius: 5%;
+
+line-height: 100px;
+text-align: left;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-decoration: none;
+border-bottom: .0005px rgba(110, 7, 7, 0.205) solid;
+animation-name: navOpening;
+animation-duration: 3s;
+animation-iteration-count: 1;
+animation-timing-function: ease-out;
+top: 0px;
+left: 0px;
+
+
+
+
+
+  
+}
+@keyframes navOpening {
+      0% {opacity: 0;}
+      30% {opacity: .3;}
+      40% {opacity: .5;}
+      50% {opacity: .7;}
+      75% {opacity: .85;}
+      100% {opacity:1;}
+    }
+
+a:hover {
+  font-size: 30px;
+  border-bottom: 5px rgb(236, 166, 166) solid;
+}
+
+#header1 {
+  margin-top: 50px;
+  margin-left: 220px;
+  margin-bottom: 0;
+  top: 5px;
+  position:absolute;
+  height: fit-content;
+  
+  justify-content: center;
+  
+
+  
+}
+
+#header1:hover {
+  margin-top: 50px;
+  margin-left: 220px;
+  margin-bottom: 0;
+  top: 5px;
+  position:absolute;
+  height: fit-content;
+  
+  justify-content: center;
+  visibility: visible;
+  font-size: 20px;
+  color: linear-gradient(toblack to gray);
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+  </style>
+  <div id="header1"><em>by</em> <br> Raynald Jean-Pierre Jr. 
+    
+  </div>
+
+  <div id="nav">
+    <a  href="#">Home</a>
+    <br>
+    <a href="#">Shop</a>
+    <br>
+    <a href="#">Reviews</a>
+    <br>
+    <a href="#">Contact</a>
+  </div>
+<div><h1>Logo</h1></div>
+<div id="shapeBox">
+    <div id="shape">
+    </div>
+    <div id="shape1">
+    </div>
+    <div id="shape2">
+    </div>
+    <div id="shape3">
+    </div>
+    </div>
+  <div id="totalpage" onscroll="scroll()">
+<div id="page1" class="pages">
+    
+    
+
+       
+  <p >
+    Lorem ipsum dolor sit 
+    amet consectetur adipisicing elit.
+     Cumque consectetur ducimus quia 
+     quis odit praesentium distinctio,
+      aut, quisquam sit dolores, molestias
+       dolor fugit officiis. Doloribus,
+        voluptatum. Pariatur facere temporibus sed?
+       
+  </p>
+  <p>
+    Lorem ipsum dolor sit 
+    amet consectetur adipisicing elit.
+     Cumque consectetur ducimus quia 
+     quis odit praesentium distinctio,
+      aut, quisquam sit dolores, molestias
+       dolor fugit officiis. Doloribus,
+        voluptatum. Pariatur facere temporibus sed?
+  </p>
+  
+  <p>
+    Lorem ipsum dolor sit 
+    amet consectetur adipisicing elit.
+     Cumque consectetur ducimus quia 
+     quis odit praesentium distinctio,
+      aut, quisquam sit dolores, molestias
+       dolor fugit officiis. Doloribus,
+        voluptatum. Pariatur facere temporibus sed?
+  </p>
+  <p>
+    Lorem ipsum dolor sit 
+    amet consectetur adipisicing elit.
+     Cumque consectetur ducimus quia 
+     quis odit praesentium distinctio,
+      aut, quisquam sit dolores, molestias
+       dolor fugit officiis. Doloribus,
+        voluptatum. Pariatur facere temporibus sed?
+  </p>
+  <p >
+    Lorem ipsum dolor sit 
+    amet consectetur adipisicing elit.
+     Cumque consectetur ducimus quia 
+     quis odit praesentium distinctio,
+      aut, quisquam sit dolores, molestias
+       dolor fugit officiis. Doloribus,
+        voluptatum. Pariatur facere temporibus sed?
+  </p>
+  <p>
+    Lorem <span id="silly"> ipsum</span> dolor sit 
+    amet consectetur adipisicing elit.
+     Cumque consectetur ducimus quia 
+     quis odit praesentium distinctio,
+      aut, quisquam sit dolores, molestias
+       dolor fugit officiis. Doloribus,
+        voluptatum. Pariatur facere temporibus sed?
+  </p>
+ 
+  <p>
+    Lorem ipsum dolor sit 
+    amet consectetur adipisicing elit.
+     Cumque consectetur ducimus quia 
+     quis odit praesentium distinctio,
+      aut, quisquam sit dolores, molestias
+       dolor fugit officiis. Doloribus,
+        voluptatum. Pariatur facere temporibus sed?
+  </p>
+  <p>
+    Lorem ipsum dolor sit 
+    amet consectetur adipisicing elit.
+     Cumque consectetur ducimus quia 
+     quis odit praesentium distinctio,
+      aut, quisquam sit dolores, molestias
+       dolor fugit officiis. Doloribus,
+        voluptatum. Pariatur facere temporibus sed?
+  </p>
+</div>
+<div id="page2" class="pages">
+    <p >
+      Lorem ipsum dolor sit 
+      amet consectetur adipisicing elit.
+       Cumque consectetur ducimus quia 
+       quis odit praesentium distinctio,
+        aut, quisquam sit dolores, molestias
+         dolor fugit officiis. Doloribus,
+          voluptatum. Pariatur facere temporibus sed?
+    </p>
+    <p>
+      Lorem ipsum dolor sit 
+      amet consectetur adipisicing elit.
+       Cumque consectetur ducimus quia 
+       quis odit praesentium distinctio,
+        aut, quisquam sit dolores, molestias
+         dolor fugit officiis. Doloribus,
+          voluptatum. Pariatur facere temporibus sed?
+    </p>
+    <p>
+      Lorem ipsum dolor sit 
+      amet consectetur adipisicing elit.
+       Cumque consectetur ducimus quia 
+       quis odit praesentium distinctio,
+        aut, quisquam sit dolores, molestias
+         dolor fugit officiis. Doloribus,
+          voluptatum. Pariatur facere temporibus sed?
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit 
+      amet consectetur adipisicing elit.
+       Cumque consectetur ducimus quia 
+       quis odit praesentium distinctio,
+        aut, quisquam sit dolores, molestias
+         dolor fugit officiis. Doloribus,
+          voluptatum. Pariatur facere temporibus sed?
+    </p>
+    <p >
+        Lorem ipsum dolor sit 
+        amet consectetur adipisicing elit.
+         Cumque consectetur ducimus quia 
+         quis odit praesentium distinctio,
+          aut, quisquam sit dolores, molestias
+           dolor fugit officiis. Doloribus,
+            voluptatum. Pariatur facere temporibus sed?
+      </p>
+    
+      <p>
+        Lorem ipsum dolor sit 
+        amet consectetur adipisicing elit.
+         Cumque consectetur ducimus quia 
+         quis odit praesentium distinctio,
+          aut, quisquam sit dolores, molestias
+           dolor fugit officiis. Doloribus,
+            voluptatum. Pariatur facere temporibus sed?
+      </p>
+      <p>
+        Lorem ipsum dolor sit 
+        amet consectetur adipisicing elit.
+         Cumque consectetur ducimus quia 
+         quis odit praesentium distinctio,
+          aut, quisquam sit dolores, molestias
+           dolor fugit officiis. Doloribus,
+            voluptatum. Pariatur facere temporibus sed?
+      </p>
+      <p>
+        Lorem ipsum dolor sit 
+        amet consectetur adipisicing elit.
+         Cumque consectetur ducimus quia 
+         quis odit praesentium distinctio,
+          aut, quisquam sit dolores, molestias
+           dolor fugit officiis. Doloribus,
+            voluptatum. Pariatur facere temporibus sed?
+      </p>
+     
+    </div>
+    <div id="page3" class="pages">
+        <div id="shapeBox">
+            <div id="shape">
+            </div>
+            <div id="shape1">
+            </div>
+            <div id="shape2">
+            </div>
+            <div id="shape3">
+            </div>
+            </div>
+        
+    
+           
+      <p >
+        Lorem ipsum dolor sit 
+        amet consectetur adipisicing elit.
+         Cumque consectetur ducimus quia 
+         quis odit praesentium distinctio,
+          aut, quisquam sit dolores, molestias
+           dolor fugit officiis. Doloribus,
+            voluptatum. Pariatur facere temporibus sed?
+           
+      </p>
+      <p>
+        Lorem ipsum dolor sit 
+        amet consectetur adipisicing elit.
+         Cumque consectetur ducimus quia 
+         quis odit praesentium distinctio,
+          aut, quisquam sit dolores, molestias
+           dolor fugit officiis. Doloribus,
+            voluptatum. Pariatur facere temporibus sed?
+      </p>
+      
+      <p>
+        Lorem ipsum dolor sit 
+        amet consectetur adipisicing elit.
+         Cumque consectetur ducimus quia 
+         quis odit praesentium distinctio,
+          aut, quisquam sit dolores, molestias
+           dolor fugit officiis. Doloribus,
+            voluptatum. Pariatur facere temporibus sed?
+      </p>
+      <p>
+        Lorem ipsum dolor sit 
+        amet consectetur adipisicing elit.
+         Cumque consectetur ducimus quia 
+         quis odit praesentium distinctio,
+          aut, quisquam sit dolores, molestias
+           dolor fugit officiis. Doloribus,
+            voluptatum. Pariatur facere temporibus sed?
+      </p>
+      <p >
+        Lorem ipsum dolor sit 
+        amet consectetur adipisicing elit.
+         Cumque consectetur ducimus quia 
+         quis odit praesentium distinctio,
+          aut, quisquam sit dolores, molestias
+           dolor fugit officiis. Doloribus,
+            voluptatum. Pariatur facere temporibus sed?
+      </p>
+      <p>
+        Lorem <span id="silly"> ipsum</span> dolor sit 
+        amet consectetur adipisicing elit.
+         Cumque consectetur ducimus quia 
+         quis odit praesentium distinctio,
+          aut, quisquam sit dolores, molestias
+           dolor fugit officiis. Doloribus,
+            voluptatum. Pariatur facere temporibus sed?
+      </p>
+     
+      <p>
+        Lorem ipsum dolor sit 
+        amet consectetur adipisicing elit.
+         Cumque consectetur ducimus quia 
+         quis odit praesentium distinctio,
+          aut, quisquam sit dolores, molestias
+           dolor fugit officiis. Doloribus,
+            voluptatum. Pariatur facere temporibus sed?
+      </p>
+      <p>
+        Lorem ipsum dolor sit 
+        amet consectetur adipisicing elit.
+         Cumque consectetur ducimus quia 
+         quis odit praesentium distinctio,
+          aut, quisquam sit dolores, molestias
+           dolor fugit officiis. Doloribus,
+            voluptatum. Pariatur facere temporibus sed?
+      </p>
+    </div>
+    <div id="page4" class="pages">
+        <p >
+          Lorem ipsum dolor sit 
+          amet consectetur adipisicing elit.
+           Cumque consectetur ducimus quia 
+           quis odit praesentium distinctio,
+            aut, quisquam sit dolores, molestias
+             dolor fugit officiis. Doloribus,
+              voluptatum. Pariatur facere temporibus sed?
+        </p>
+        <p>
+          Lorem ipsum dolor sit 
+          amet consectetur adipisicing elit.
+           Cumque consectetur ducimus quia 
+           quis odit praesentium distinctio,
+            aut, quisquam sit dolores, molestias
+             dolor fugit officiis. Doloribus,
+              voluptatum. Pariatur facere temporibus sed?
+        </p>
+        <p>
+          Lorem ipsum dolor sit 
+          amet consectetur adipisicing elit.
+           Cumque consectetur ducimus quia 
+           quis odit praesentium distinctio,
+            aut, quisquam sit dolores, molestias
+             dolor fugit officiis. Doloribus,
+              voluptatum. Pariatur facere temporibus sed?
+        </p>
+    
+        <p>
+          Lorem ipsum dolor sit 
+          amet consectetur adipisicing elit.
+           Cumque consectetur ducimus quia 
+           quis odit praesentium distinctio,
+            aut, quisquam sit dolores, molestias
+             dolor fugit officiis. Doloribus,
+              voluptatum. Pariatur facere temporibus sed?
+        </p>
+        <p >
+            Lorem ipsum dolor sit 
+            amet consectetur adipisicing elit.
+             Cumque consectetur ducimus quia 
+             quis odit praesentium distinctio,
+              aut, quisquam sit dolores, molestias
+               dolor fugit officiis. Doloribus,
+                voluptatum. Pariatur facere temporibus sed?
+          </p>
+        
+          <p>
+            Lorem ipsum dolor sit 
+            amet consectetur adipisicing elit.
+             Cumque consectetur ducimus quia 
+             quis odit praesentium distinctio,
+              aut, quisquam sit dolores, molestias
+               dolor fugit officiis. Doloribus,
+                voluptatum. Pariatur facere temporibus sed?
+          </p>
+          <p>
+            Lorem ipsum dolor sit 
+            amet consectetur adipisicing elit.
+             Cumque consectetur ducimus quia 
+             quis odit praesentium distinctio,
+              aut, quisquam sit dolores, molestias
+               dolor fugit officiis. Doloribus,
+                voluptatum. Pariatur facere temporibus sed?
+          </p>
+          <p>
+            Lorem ipsum dolor sit 
+            amet consectetur adipisicing elit.
+             Cumque consectetur ducimus quia 
+             quis odit praesentium distinctio,
+              aut, quisquam sit dolores, molestias
+               dolor fugit officiis. Doloribus,
+                voluptatum. Pariatur facere temporibus sed?
+          </p>
+         
+        </div>
+        <div id="footer"> <h1>Thank You for visting</h1>
+        <h2>3535 west broward st, Jacksonville, Fl 33455
+            (904)-454-7677
+
+    
+        </h2></div>
+    
+
+
+
+
+ 
+
+
+  
+     
+      
+       
+      
+  
+
+</body>
+
+
+  <script>
+
+var y = window.pageYOffset;
+   
+
+
+function update() {
+    btn.addEventListener("click", update);
+   var x = document.getElementById("page1");
+   var y = window.pageYOffset;
+
+  const container = document.getElementById("page1");
+  const elem = document.getElementById("shape1");
+  const rect = elem.getBoundingClientRect();
+  console.log(x);
+  console.log(y);
+
+  var slide = document.getElementById("page1");
+    slide.style.visibility = ("visible");
+
+    var slide = document.getElementById("page2");
+    slide.style.visibility = ("visible");
+    var slide = document.getElementById("page3");
+    slide.style.visibility = ("visible");
+    var slide = document.getElementById("page4");
+    slide.style.visibility = ("visible");
+
+}
+
+
+window.onscroll = function() {
+if (document.documentElement.scrollTop > 0 ) {
+    document.getElementById("page1").className = "test";
+  } else {
+    document.getElementById("page1").className = "test1";
+  }
+  if (document.documentElement.scrollTop > 450) {
+    document.getElementById("page2").className = "test";
+  } else {
+    document.getElementById("page2").className = "test1";
+  }
+  if (document.documentElement.scrollTop > 1050) {
+    document.getElementById("page3").className = "test";
+  } else {
+    document.getElementById("page3").className = "test1";
+  }
+  if (document.documentElement.scrollTop > 1550) {
+    document.getElementById("page4").className = "test";
+  } else {
+    document.getElementById("page4").className = "";
+  }
+  console.log(document.documentElement.scrollTop)
+
+}
+
+
+    
+    
+        
+    
+
+  </script>
+</body>
+</html>
